@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js"></script>
+    <title>Digital puzzle</title>
+  </head>
+  <body>
+    <div class="content-blocks">
+      <h1>Задача-пазл</h1>
+      <h3>Умова</h3>
+      <p>
+        Давайте складемо з вами цифровий пазл, де елементами з'єднання будуть
+        перші або останні ДВІ цифри. Для спрощення завдання будемо
+        використовувати однорядний пазл, де його фрагменти можуть розміщуватись
+        тільки слідуючи один за одним.
+        <br />Текстовий файл має 142 фрагменти, що повинні складатися тільки із
+        цифр! Визначте найбільшу (найдовшу) послідовність для цих фрагментів.
+      </p>
+    </div>
+    <div class="content-blocks">
+      <h3>Рішення</h3>
+      <p>
+        Завантажте файл, що складається лише з цифр. Числа повинні бути
+        шестизначними та розділені абзацом чи пробілом. Щоб знайти рішення,
+        натисніть кнопку "Знайти рішення".
+      </p>
+
+      <div class="buttons-container">
+        <label for="fileInput" class="file-input-button">
+          Завантажити файл
+        </label>
+        <p id="fileName"></p>
+        <input id="fileInput" type="file" />
+
+        <button class="calcilate-button" onclick="calculate()">
+          Знайти рішення
+        </button>
+      </div>
+      <h2>Найбільша послідованість:</h2>
+      <p id="output"></p>
+      <div class="loader-container">
+        <div id="loader"></div>
+      </div>
+    </div>
+  </body>
+</html>

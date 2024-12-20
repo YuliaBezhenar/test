@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "Namu";
+    src: url("../font/NAMU-Pro.woff") format("woff")
+}
+
+body {
+    background-color: #fffced;
+    text-decoration: none;
+    font-family: "Namu";
+    color: #171717;
+}
+
+h1{
+    color: #e5850e;
+    text-align: center;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.content-blocks{
+    margin: 20px 80px;
+    padding: 20px 80px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 1px #dfdfdf;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+input[type="file"] {
+    display: none;
+}
+
+.file-input-button, .calcilate-button{    
+    border: 1px solid #b36300;
+    border-radius: 8px;
+    background-color: #e5850e;
+    color: #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-family: "Namu";
+    font-size: medium;
+}
+
+.file-input-button:hover, .calcilate-button:hover{
+    background-color: #b36300;
+}
+
+#output{
+    overflow-wrap: break-word
+}
+
+
+.loader-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    z-index: 9999;
+}
+
+#loader {
+    display: none;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #e5850e;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
